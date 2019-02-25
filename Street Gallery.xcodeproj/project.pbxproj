@@ -17,6 +17,8 @@
 		298ECE59221C382D004D6706 /* Street_GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE58221C382D004D6706 /* Street_GalleryTests.swift */; };
 		298ECE68221C3A8E004D6706 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE67221C3A8E004D6706 /* SplashVC.swift */; };
 		298ECE6A221C3C29004D6706 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE69221C3C29004D6706 /* Constant.swift */; };
+		29E9CB50221EF6FD0033CC26 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9CB4F221EF6FD0033CC26 /* DroppablePin.swift */; };
+		29F94EFF222370EA0036FFFE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F94EFE222370EA0036FFFE /* PhotoCell.swift */; };
 		6239FAFBC5883F13F50CDAA9 /* Pods_Street_GalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F948E8745844310033EECEB /* Pods_Street_GalleryTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		298ECE5A221C382D004D6706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298ECE67221C3A8E004D6706 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		298ECE69221C3C29004D6706 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		29E9CB4F221EF6FD0033CC26 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		29F94EFE222370EA0036FFFE /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		31537CF79FFA21F7BE137F99 /* Pods-Street GalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Street GalleryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Street GalleryTests/Pods-Street GalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41CE200BE54E61A27208629A /* Pods-Street Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Street Gallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Street Gallery/Pods-Street Gallery.release.xcconfig"; sourceTree = "<group>"; };
 		90861ED4E7DA513FF94DAD88 /* Pods-Street GalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Street GalleryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Street GalleryTests/Pods-Street GalleryTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		298ECE64221C39CF004D6706 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				29E9CB4F221EF6FD0033CC26 /* DroppablePin.swift */,
+				29F94EFE222370EA0036FFFE /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,7 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F94EFF222370EA0036FFFE /* PhotoCell.swift in Sources */,
 				298ECE49221C382B004D6706 /* Street_Gallery.xcdatamodeld in Sources */,
+				29E9CB50221EF6FD0033CC26 /* DroppablePin.swift in Sources */,
 				298ECE68221C3A8E004D6706 /* SplashVC.swift in Sources */,
 				298ECE6A221C3C29004D6706 /* Constant.swift in Sources */,
 				298ECE43221C382B004D6706 /* MapVC.swift in Sources */,

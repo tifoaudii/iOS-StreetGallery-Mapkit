@@ -183,14 +183,14 @@ extension MapVC: MKMapViewDelegate {
     func retrieveUrlsImage(forAnnotation annotation: DroppablePin, completion: @escaping (_ status:Bool) -> ()) {
         urlImages.removeAll()
         
-        Alamofire.request(getPhotoURL(forAPiKey: API_KEY, forAnnotation: annotation, numberOfPhotos: 20)).responseJSON { (response) in
+        Alamofire.request(getPhotoURL(forAPiKey: API_KEY, forAnnotation: annotation, numberOfPhotos: 30)).responseJSON { (response) in
             
             guard let json = response.result.value as? Dictionary<String,AnyObject> else { return }
             let photosUrl = json["photos"] as! Dictionary<String,AnyObject>
             let listPhoto = photosUrl["photo"] as! [Dictionary<String,AnyObject>]
             
             for photo in listPhoto {
-                let postUrl = "https://farm\(photo["farm"]!).staticflickr.com/\(photo["server"]!)/\(photo["id"]!)_\(photo["secret"]!)_h_d.jpg"
+                let postUrl = "https://farm\(photo["farm"]!).staticflickr.com/\(photo["server"]!)/\(photo["id"]!)_\(photo["secret"]!)_z_d.jpg"
                 
                 self.urlImages.append(postUrl)
             }
@@ -205,7 +205,7 @@ extension MapVC: MKMapViewDelegate {
             Alamofire.request(photoUrl).responseImage { (response) in
                 guard let responseImage = response.result.value else { return }
                 self.imageArray.append(responseImage)
-                self.progressLabel?.text = "\(self.imageArray.count)/40 Downloaded"
+                self.progressLabel?.text = "\(self.imageArray.count) photos downloaded"
                 
                 
                 if self.imageArray.count == self.urlImages.count {
@@ -262,7 +262,9 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("item selected at \(indexPath.row)")
+        guard let PopVC = storyboard?.instantiateViewController(withIdentifier: "PopVC") as? PopVC else { return }
+        PopVC.loadImage(forImage: imageArray[indexPath.row])
+        present(PopVC, animated: true, completion: nil)
     }
 }
 

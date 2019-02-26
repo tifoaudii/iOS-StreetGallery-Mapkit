@@ -123,6 +123,50 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="-13.300492610837439"/>
         </scene>
+        <!--PopVC-->
+        <scene sceneID="F2Y-xq-MkX">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="hgG-6n-zAh" customClass="PopVC" customModule="Street_Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p78-wF-Pp2"/>
+                        <viewControllerLayoutGuide type="bottom" id="nht-w7-cRR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dh8-jt-7CR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-pu-6L4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to dismiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-D9-rR0">
+                                <rect key="frame" x="87.666666666666686" y="728" width="200" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5DJ-W7-sfd"/>
+                                    <constraint firstAttribute="width" constant="200" id="feh-eD-myc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e7C-pu-6L4" secondAttribute="trailing" id="2NP-4z-pji"/>
+                            <constraint firstItem="nht-w7-cRR" firstAttribute="top" secondItem="VnE-D9-rR0" secondAttribute="bottom" constant="25" id="Du1-vV-huw"/>
+                            <constraint firstItem="VnE-D9-rR0" firstAttribute="centerX" secondItem="dh8-jt-7CR" secondAttribute="centerX" id="Nnz-dD-Nae"/>
+                            <constraint firstItem="e7C-pu-6L4" firstAttribute="leading" secondItem="dh8-jt-7CR" secondAttribute="leading" id="dW1-m6-sNZ"/>
+                            <constraint firstItem="e7C-pu-6L4" firstAttribute="top" secondItem="dh8-jt-7CR" secondAttribute="top" id="lQA-Tf-U5n"/>
+                            <constraint firstAttribute="bottom" secondItem="e7C-pu-6L4" secondAttribute="bottom" id="sxL-v2-hFx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="e7C-pu-6L4" id="XVD-eD-Ct2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAb-Ib-Ckz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285.5999999999999" y="-6.6502463054187197"/>
+        </scene>
     </scenes>
     <resources>
         <image name="locationButton" width="67" height="67"/>

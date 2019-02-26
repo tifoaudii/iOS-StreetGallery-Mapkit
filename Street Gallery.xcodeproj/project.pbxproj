@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000D16AB99F081890B69C71B /* Pods_Street_Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A104F8F604E3F54A2907E96D /* Pods_Street_Gallery.framework */; };
+		297048BA22254D9B006808CB /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297048B922254D9B006808CB /* PopVC.swift */; };
 		298ECE41221C382B004D6706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE40221C382B004D6706 /* AppDelegate.swift */; };
 		298ECE43221C382B004D6706 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ECE42221C382B004D6706 /* MapVC.swift */; };
 		298ECE46221C382B004D6706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298ECE44221C382B004D6706 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		015D72DCB19882E8719862D7 /* Pods-Street Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Street Gallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Street Gallery/Pods-Street Gallery.debug.xcconfig"; sourceTree = "<group>"; };
 		0F948E8745844310033EECEB /* Pods_Street_GalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Street_GalleryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		297048B922254D9B006808CB /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		298ECE3D221C382B004D6706 /* Street Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Street Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		298ECE40221C382B004D6706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		298ECE42221C382B004D6706 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				298ECE42221C382B004D6706 /* MapVC.swift */,
 				298ECE67221C3A8E004D6706 /* SplashVC.swift */,
+				297048B922254D9B006808CB /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				298ECE68221C3A8E004D6706 /* SplashVC.swift in Sources */,
 				298ECE6A221C3C29004D6706 /* Constant.swift in Sources */,
 				298ECE43221C382B004D6706 /* MapVC.swift in Sources */,
+				297048BA22254D9B006808CB /* PopVC.swift in Sources */,
 				298ECE41221C382B004D6706 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
